@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2634C6F71CBE3BDB00DFC654 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C6F61CBE3BDB00DFC654 /* main.m */; };
+		2634C6FA1CBE3BDB00DFC654 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C6F91CBE3BDB00DFC654 /* AppDelegate.m */; };
+		2634C7001CBE3BDB00DFC654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634C6FE1CBE3BDB00DFC654 /* Main.storyboard */; };
+		2634C7031CBE3BDB00DFC654 /* bloodPressureP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7011CBE3BDB00DFC654 /* bloodPressureP.xcdatamodeld */; };
+		2634C7051CBE3BDB00DFC654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2634C7041CBE3BDB00DFC654 /* Assets.xcassets */; };
+		2634C7081CBE3BDB00DFC654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634C7061CBE3BDB00DFC654 /* LaunchScreen.storyboard */; };
+		2634C7131CBE3BDB00DFC654 /* bloodPressurePTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7121CBE3BDB00DFC654 /* bloodPressurePTests.m */; };
+		2634C71E1CBE3BDB00DFC654 /* bloodPressurePUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C71D1CBE3BDB00DFC654 /* bloodPressurePUITests.m */; };
+		2634C72E1CC0DC3400DFC654 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C72D1CC0DC3400DFC654 /* SignUpViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7311CC0DD1700DFC654 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7301CC0DD1700DFC654 /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7341CC0DE5000DFC654 /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7331CC0DE5000DFC654 /* HomeNavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7381CC0DFD000DFC654 /* UserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7371CC0DFD000DFC654 /* UserHelper.m */; settings = {ASSET_TAGS = (); }; };
+		2634C73B1CC0E0DA00DFC654 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C73A1CC0E0DA00DFC654 /* CoreDataHelper.m */; settings = {ASSET_TAGS = (); }; };
+		2634C76C1CC22E1800DFC654 /* BloodPressureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C76B1CC22E1800DFC654 /* BloodPressureViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2634C76F1CC230BD00DFC654 /* DailyLogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C76E1CC230BD00DFC654 /* DailyLogHelper.m */; settings = {ASSET_TAGS = (); }; };
+		2634C77B1CC2370500DFC654 /* MeasurementHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C77A1CC2370500DFC654 /* MeasurementHelper.m */; settings = {ASSET_TAGS = (); }; };
+		2634C77E1CC382D000DFC654 /* BloodPressureHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C77D1CC382D000DFC654 /* BloodPressureHelper.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7841CC3858B00DFC654 /* UIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7831CC3858B00DFC654 /* UIHelper.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7AF1CC3876200DFC654 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7981CC3876200DFC654 /* User+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7B01CC3876200DFC654 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C79A1CC3876200DFC654 /* User.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7B11CC3876200DFC654 /* Measurement+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C79C1CC3876200DFC654 /* Measurement+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7B21CC3876200DFC654 /* Measurement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C79E1CC3876200DFC654 /* Measurement.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7B31CC3876200DFC654 /* DailyLog+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7A01CC3876200DFC654 /* DailyLog+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7B41CC3876200DFC654 /* DailyLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7A21CC3876200DFC654 /* DailyLog.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7B51CC3876200DFC654 /* Feeling+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7A41CC3876200DFC654 /* Feeling+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7B61CC3876200DFC654 /* Feeling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7A61CC3876200DFC654 /* Feeling.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7B71CC3876200DFC654 /* BloodPressure+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7A81CC3876200DFC654 /* BloodPressure+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7B81CC3876200DFC654 /* BloodPressure.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7A91CC3876200DFC654 /* BloodPressure.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7B91CC3876200DFC654 /* Preferences+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7AB1CC3876200DFC654 /* Preferences+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7BA1CC3876200DFC654 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7AE1CC3876200DFC654 /* Preferences.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7BE1CC3912000DFC654 /* NSDate+BPDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7BD1CC3912000DFC654 /* NSDate+BPDate.m */; settings = {ASSET_TAGS = (); }; };
+		794E6DCA2B170DC5D958DAFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 140FE9C522D28869F070EE0C /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2634C70F1CBE3BDB00DFC654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2634C6EA1CBE3BDB00DFC654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2634C6F11CBE3BDB00DFC654;
+			remoteInfo = bloodPressureP;
+		};
+		2634C71A1CBE3BDB00DFC654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2634C6EA1CBE3BDB00DFC654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2634C6F11CBE3BDB00DFC654;
+			remoteInfo = bloodPressureP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		140FE9C522D28869F070EE0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2634C6F21CBE3BDB00DFC654 /* bloodPressureP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bloodPressureP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2634C6F61CBE3BDB00DFC654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2634C6F81CBE3BDB00DFC654 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2634C6F91CBE3BDB00DFC654 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2634C6FF1CBE3BDB00DFC654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2634C7021CBE3BDB00DFC654 /* bloodPressureP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bloodPressureP.xcdatamodel; sourceTree = "<group>"; };
+		2634C7041CBE3BDB00DFC654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2634C7071CBE3BDB00DFC654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2634C7091CBE3BDB00DFC654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2634C70E1CBE3BDB00DFC654 /* bloodPressurePTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bloodPressurePTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2634C7121CBE3BDB00DFC654 /* bloodPressurePTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bloodPressurePTests.m; sourceTree = "<group>"; };
+		2634C7141CBE3BDB00DFC654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2634C7191CBE3BDB00DFC654 /* bloodPressurePUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bloodPressurePUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2634C71D1CBE3BDB00DFC654 /* bloodPressurePUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bloodPressurePUITests.m; sourceTree = "<group>"; };
+		2634C71F1CBE3BDB00DFC654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2634C72C1CC0DC3400DFC654 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = VC/SignUpViewController.h; sourceTree = "<group>"; };
+		2634C72D1CC0DC3400DFC654 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = VC/SignUpViewController.m; sourceTree = "<group>"; };
+		2634C72F1CC0DD1700DFC654 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = VC/HomeViewController.h; sourceTree = "<group>"; };
+		2634C7301CC0DD1700DFC654 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = VC/HomeViewController.m; sourceTree = "<group>"; };
+		2634C7321CC0DE5000DFC654 /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeNavigationController.h; path = VC/HomeNavigationController.h; sourceTree = "<group>"; };
+		2634C7331CC0DE5000DFC654 /* HomeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeNavigationController.m; path = VC/HomeNavigationController.m; sourceTree = "<group>"; };
+		2634C7361CC0DFD000DFC654 /* UserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserHelper.h; path = Helpers/UserHelper.h; sourceTree = "<group>"; };
+		2634C7371CC0DFD000DFC654 /* UserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserHelper.m; path = Helpers/UserHelper.m; sourceTree = "<group>"; };
+		2634C7391CC0E0DA00DFC654 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataHelper.h; path = Helpers/CoreDataHelper.h; sourceTree = "<group>"; };
+		2634C73A1CC0E0DA00DFC654 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataHelper.m; path = Helpers/CoreDataHelper.m; sourceTree = "<group>"; };
+		2634C76A1CC22E1800DFC654 /* BloodPressureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BloodPressureViewController.h; path = VC/BloodPressureViewController.h; sourceTree = "<group>"; };
+		2634C76B1CC22E1800DFC654 /* BloodPressureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BloodPressureViewController.m; path = VC/BloodPressureViewController.m; sourceTree = "<group>"; };
+		2634C76D1CC230BD00DFC654 /* DailyLogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DailyLogHelper.h; path = Helpers/DailyLogHelper.h; sourceTree = "<group>"; };
+		2634C76E1CC230BD00DFC654 /* DailyLogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DailyLogHelper.m; path = Helpers/DailyLogHelper.m; sourceTree = "<group>"; };
+		2634C7791CC2370500DFC654 /* MeasurementHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeasurementHelper.h; path = Helpers/MeasurementHelper.h; sourceTree = "<group>"; };
+		2634C77A1CC2370500DFC654 /* MeasurementHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeasurementHelper.m; path = Helpers/MeasurementHelper.m; sourceTree = "<group>"; };
+		2634C77C1CC382D000DFC654 /* BloodPressureHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BloodPressureHelper.h; path = Helpers/BloodPressureHelper.h; sourceTree = "<group>"; };
+		2634C77D1CC382D000DFC654 /* BloodPressureHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BloodPressureHelper.m; path = Helpers/BloodPressureHelper.m; sourceTree = "<group>"; };
+		2634C7821CC3858B00DFC654 /* UIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIHelper.h; path = Helpers/UIHelper.h; sourceTree = "<group>"; };
+		2634C7831CC3858B00DFC654 /* UIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIHelper.m; path = Helpers/UIHelper.m; sourceTree = "<group>"; };
+		2634C7971CC3876200DFC654 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataProperties.h"; path = "CoreDataModels/User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2634C7981CC3876200DFC654 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataProperties.m"; path = "CoreDataModels/User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2634C7991CC3876200DFC654 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = CoreDataModels/User.h; sourceTree = "<group>"; };
+		2634C79A1CC3876200DFC654 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = CoreDataModels/User.m; sourceTree = "<group>"; };
+		2634C79B1CC3876200DFC654 /* Measurement+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Measurement+CoreDataProperties.h"; path = "CoreDataModels/Measurement+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2634C79C1CC3876200DFC654 /* Measurement+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Measurement+CoreDataProperties.m"; path = "CoreDataModels/Measurement+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2634C79D1CC3876200DFC654 /* Measurement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Measurement.h; path = CoreDataModels/Measurement.h; sourceTree = "<group>"; };
+		2634C79E1CC3876200DFC654 /* Measurement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Measurement.m; path = CoreDataModels/Measurement.m; sourceTree = "<group>"; };
+		2634C79F1CC3876200DFC654 /* DailyLog+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DailyLog+CoreDataProperties.h"; path = "CoreDataModels/DailyLog+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2634C7A01CC3876200DFC654 /* DailyLog+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DailyLog+CoreDataProperties.m"; path = "CoreDataModels/DailyLog+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2634C7A11CC3876200DFC654 /* DailyLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DailyLog.h; path = CoreDataModels/DailyLog.h; sourceTree = "<group>"; };
+		2634C7A21CC3876200DFC654 /* DailyLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DailyLog.m; path = CoreDataModels/DailyLog.m; sourceTree = "<group>"; };
+		2634C7A31CC3876200DFC654 /* Feeling+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Feeling+CoreDataProperties.h"; path = "CoreDataModels/Feeling+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2634C7A41CC3876200DFC654 /* Feeling+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Feeling+CoreDataProperties.m"; path = "CoreDataModels/Feeling+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2634C7A51CC3876200DFC654 /* Feeling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Feeling.h; path = CoreDataModels/Feeling.h; sourceTree = "<group>"; };
+		2634C7A61CC3876200DFC654 /* Feeling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Feeling.m; path = CoreDataModels/Feeling.m; sourceTree = "<group>"; };
+		2634C7A71CC3876200DFC654 /* BloodPressure+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BloodPressure+CoreDataProperties.h"; path = "CoreDataModels/BloodPressure+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2634C7A81CC3876200DFC654 /* BloodPressure+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BloodPressure+CoreDataProperties.m"; path = "CoreDataModels/BloodPressure+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2634C7A91CC3876200DFC654 /* BloodPressure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BloodPressure.m; path = CoreDataModels/BloodPressure.m; sourceTree = "<group>"; };
+		2634C7AA1CC3876200DFC654 /* Preferences+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Preferences+CoreDataProperties.h"; path = "CoreDataModels/Preferences+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2634C7AB1CC3876200DFC654 /* Preferences+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Preferences+CoreDataProperties.m"; path = "CoreDataModels/Preferences+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2634C7AC1CC3876200DFC654 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Preferences.h; path = CoreDataModels/Preferences.h; sourceTree = "<group>"; };
+		2634C7AD1CC3876200DFC654 /* BloodPressure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BloodPressure.h; path = CoreDataModels/BloodPressure.h; sourceTree = "<group>"; };
+		2634C7AE1CC3876200DFC654 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Preferences.m; path = CoreDataModels/Preferences.m; sourceTree = "<group>"; };
+		2634C7BC1CC3912000DFC654 /* NSDate+BPDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+BPDate.h"; path = "Categories/NSDate+BPDate.h"; sourceTree = "<group>"; };
+		2634C7BD1CC3912000DFC654 /* NSDate+BPDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+BPDate.m"; path = "Categories/NSDate+BPDate.m"; sourceTree = "<group>"; };
+		4E1A4F316DB24F2E9B6AF7EE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5C236FD2E7E7003648B38730 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2634C6EF1CBE3BDB00DFC654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794E6DCA2B170DC5D958DAFA /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2634C70B1CBE3BDB00DFC654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2634C7161CBE3BDB00DFC654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25CC135202024AC68A724AB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E1A4F316DB24F2E9B6AF7EE /* Pods.debug.xcconfig */,
+				5C236FD2E7E7003648B38730 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2634C6E91CBE3BDB00DFC654 = {
+			isa = PBXGroup;
+			children = (
+				2634C6F41CBE3BDB00DFC654 /* bloodPressureP */,
+				2634C7111CBE3BDB00DFC654 /* bloodPressurePTests */,
+				2634C71C1CBE3BDB00DFC654 /* bloodPressurePUITests */,
+				2634C6F31CBE3BDB00DFC654 /* Products */,
+				25CC135202024AC68A724AB8 /* Pods */,
+				AA1240F5CDEA710402F9361A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2634C6F31CBE3BDB00DFC654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2634C6F21CBE3BDB00DFC654 /* bloodPressureP.app */,
+				2634C70E1CBE3BDB00DFC654 /* bloodPressurePTests.xctest */,
+				2634C7191CBE3BDB00DFC654 /* bloodPressurePUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2634C6F41CBE3BDB00DFC654 /* bloodPressureP */ = {
+			isa = PBXGroup;
+			children = (
+				2634C7BB1CC390F000DFC654 /* Categories */,
+				2634C73C1CC0E5BE00DFC654 /* CoreDataModels */,
+				2634C7351CC0DFB600DFC654 /* Helpers */,
+				2634C72B1CC0DC1A00DFC654 /* VC */,
+				2634C6F81CBE3BDB00DFC654 /* AppDelegate.h */,
+				2634C6F91CBE3BDB00DFC654 /* AppDelegate.m */,
+				2634C6FE1CBE3BDB00DFC654 /* Main.storyboard */,
+				2634C7041CBE3BDB00DFC654 /* Assets.xcassets */,
+				2634C7061CBE3BDB00DFC654 /* LaunchScreen.storyboard */,
+				2634C7091CBE3BDB00DFC654 /* Info.plist */,
+				2634C7011CBE3BDB00DFC654 /* bloodPressureP.xcdatamodeld */,
+				2634C6F51CBE3BDB00DFC654 /* Supporting Files */,
+			);
+			path = bloodPressureP;
+			sourceTree = "<group>";
+		};
+		2634C6F51CBE3BDB00DFC654 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2634C6F61CBE3BDB00DFC654 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2634C7111CBE3BDB00DFC654 /* bloodPressurePTests */ = {
+			isa = PBXGroup;
+			children = (
+				2634C7121CBE3BDB00DFC654 /* bloodPressurePTests.m */,
+				2634C7141CBE3BDB00DFC654 /* Info.plist */,
+			);
+			path = bloodPressurePTests;
+			sourceTree = "<group>";
+		};
+		2634C71C1CBE3BDB00DFC654 /* bloodPressurePUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2634C71D1CBE3BDB00DFC654 /* bloodPressurePUITests.m */,
+				2634C71F1CBE3BDB00DFC654 /* Info.plist */,
+			);
+			path = bloodPressurePUITests;
+			sourceTree = "<group>";
+		};
+		2634C72B1CC0DC1A00DFC654 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				2634C72C1CC0DC3400DFC654 /* SignUpViewController.h */,
+				2634C72D1CC0DC3400DFC654 /* SignUpViewController.m */,
+				2634C72F1CC0DD1700DFC654 /* HomeViewController.h */,
+				2634C7301CC0DD1700DFC654 /* HomeViewController.m */,
+				2634C7321CC0DE5000DFC654 /* HomeNavigationController.h */,
+				2634C7331CC0DE5000DFC654 /* HomeNavigationController.m */,
+				2634C76A1CC22E1800DFC654 /* BloodPressureViewController.h */,
+				2634C76B1CC22E1800DFC654 /* BloodPressureViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		2634C7351CC0DFB600DFC654 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2634C7361CC0DFD000DFC654 /* UserHelper.h */,
+				2634C7371CC0DFD000DFC654 /* UserHelper.m */,
+				2634C7391CC0E0DA00DFC654 /* CoreDataHelper.h */,
+				2634C73A1CC0E0DA00DFC654 /* CoreDataHelper.m */,
+				2634C76D1CC230BD00DFC654 /* DailyLogHelper.h */,
+				2634C76E1CC230BD00DFC654 /* DailyLogHelper.m */,
+				2634C7791CC2370500DFC654 /* MeasurementHelper.h */,
+				2634C77A1CC2370500DFC654 /* MeasurementHelper.m */,
+				2634C77C1CC382D000DFC654 /* BloodPressureHelper.h */,
+				2634C77D1CC382D000DFC654 /* BloodPressureHelper.m */,
+				2634C7821CC3858B00DFC654 /* UIHelper.h */,
+				2634C7831CC3858B00DFC654 /* UIHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		2634C73C1CC0E5BE00DFC654 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				2634C7971CC3876200DFC654 /* User+CoreDataProperties.h */,
+				2634C7981CC3876200DFC654 /* User+CoreDataProperties.m */,
+				2634C7991CC3876200DFC654 /* User.h */,
+				2634C79A1CC3876200DFC654 /* User.m */,
+				2634C79B1CC3876200DFC654 /* Measurement+CoreDataProperties.h */,
+				2634C79C1CC3876200DFC654 /* Measurement+CoreDataProperties.m */,
+				2634C79D1CC3876200DFC654 /* Measurement.h */,
+				2634C79E1CC3876200DFC654 /* Measurement.m */,
+				2634C79F1CC3876200DFC654 /* DailyLog+CoreDataProperties.h */,
+				2634C7A01CC3876200DFC654 /* DailyLog+CoreDataProperties.m */,
+				2634C7A11CC3876200DFC654 /* DailyLog.h */,
+				2634C7A21CC3876200DFC654 /* DailyLog.m */,
+				2634C7A31CC3876200DFC654 /* Feeling+CoreDataProperties.h */,
+				2634C7A41CC3876200DFC654 /* Feeling+CoreDataProperties.m */,
+				2634C7A51CC3876200DFC654 /* Feeling.h */,
+				2634C7A61CC3876200DFC654 /* Feeling.m */,
+				2634C7A71CC3876200DFC654 /* BloodPressure+CoreDataProperties.h */,
+				2634C7A81CC3876200DFC654 /* BloodPressure+CoreDataProperties.m */,
+				2634C7A91CC3876200DFC654 /* BloodPressure.m */,
+				2634C7AA1CC3876200DFC654 /* Preferences+CoreDataProperties.h */,
+				2634C7AB1CC3876200DFC654 /* Preferences+CoreDataProperties.m */,
+				2634C7AC1CC3876200DFC654 /* Preferences.h */,
+				2634C7AD1CC3876200DFC654 /* BloodPressure.h */,
+				2634C7AE1CC3876200DFC654 /* Preferences.m */,
+			);
+			name = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		2634C7BB1CC390F000DFC654 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2634C7BC1CC3912000DFC654 /* NSDate+BPDate.h */,
+				2634C7BD1CC3912000DFC654 /* NSDate+BPDate.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		AA1240F5CDEA710402F9361A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				140FE9C522D28869F070EE0C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2634C6F11CBE3BDB00DFC654 /* bloodPressureP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2634C7221CBE3BDB00DFC654 /* Build configuration list for PBXNativeTarget "bloodPressureP" */;
+			buildPhases = (
+				200A83DD867098482F908053 /* Check Pods Manifest.lock */,
+				2634C6EE1CBE3BDB00DFC654 /* Sources */,
+				2634C6EF1CBE3BDB00DFC654 /* Frameworks */,
+				2634C6F01CBE3BDB00DFC654 /* Resources */,
+				9156F97417DFA21470F0635A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bloodPressureP;
+			productName = bloodPressureP;
+			productReference = 2634C6F21CBE3BDB00DFC654 /* bloodPressureP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2634C70D1CBE3BDB00DFC654 /* bloodPressurePTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2634C7251CBE3BDB00DFC654 /* Build configuration list for PBXNativeTarget "bloodPressurePTests" */;
+			buildPhases = (
+				2634C70A1CBE3BDB00DFC654 /* Sources */,
+				2634C70B1CBE3BDB00DFC654 /* Frameworks */,
+				2634C70C1CBE3BDB00DFC654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2634C7101CBE3BDB00DFC654 /* PBXTargetDependency */,
+			);
+			name = bloodPressurePTests;
+			productName = bloodPressurePTests;
+			productReference = 2634C70E1CBE3BDB00DFC654 /* bloodPressurePTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2634C7181CBE3BDB00DFC654 /* bloodPressurePUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2634C7281CBE3BDB00DFC654 /* Build configuration list for PBXNativeTarget "bloodPressurePUITests" */;
+			buildPhases = (
+				2634C7151CBE3BDB00DFC654 /* Sources */,
+				2634C7161CBE3BDB00DFC654 /* Frameworks */,
+				2634C7171CBE3BDB00DFC654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2634C71B1CBE3BDB00DFC654 /* PBXTargetDependency */,
+			);
+			name = bloodPressurePUITests;
+			productName = bloodPressurePUITests;
+			productReference = 2634C7191CBE3BDB00DFC654 /* bloodPressurePUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2634C6EA1CBE3BDB00DFC654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Adriana Elizondo";
+				TargetAttributes = {
+					2634C6F11CBE3BDB00DFC654 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					2634C70D1CBE3BDB00DFC654 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 2634C6F11CBE3BDB00DFC654;
+					};
+					2634C7181CBE3BDB00DFC654 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 2634C6F11CBE3BDB00DFC654;
+					};
+				};
+			};
+			buildConfigurationList = 2634C6ED1CBE3BDB00DFC654 /* Build configuration list for PBXProject "bloodPressureP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2634C6E91CBE3BDB00DFC654;
+			productRefGroup = 2634C6F31CBE3BDB00DFC654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2634C6F11CBE3BDB00DFC654 /* bloodPressureP */,
+				2634C70D1CBE3BDB00DFC654 /* bloodPressurePTests */,
+				2634C7181CBE3BDB00DFC654 /* bloodPressurePUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2634C6F01CBE3BDB00DFC654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2634C7081CBE3BDB00DFC654 /* LaunchScreen.storyboard in Resources */,
+				2634C7051CBE3BDB00DFC654 /* Assets.xcassets in Resources */,
+				2634C7001CBE3BDB00DFC654 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2634C70C1CBE3BDB00DFC654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2634C7171CBE3BDB00DFC654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		200A83DD867098482F908053 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9156F97417DFA21470F0635A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2634C6EE1CBE3BDB00DFC654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2634C7BE1CC3912000DFC654 /* NSDate+BPDate.m in Sources */,
+				2634C7B31CC3876200DFC654 /* DailyLog+CoreDataProperties.m in Sources */,
+				2634C7AF1CC3876200DFC654 /* User+CoreDataProperties.m in Sources */,
+				2634C77E1CC382D000DFC654 /* BloodPressureHelper.m in Sources */,
+				2634C7031CBE3BDB00DFC654 /* bloodPressureP.xcdatamodeld in Sources */,
+				2634C7B61CC3876200DFC654 /* Feeling.m in Sources */,
+				2634C7841CC3858B00DFC654 /* UIHelper.m in Sources */,
+				2634C72E1CC0DC3400DFC654 /* SignUpViewController.m in Sources */,
+				2634C7B01CC3876200DFC654 /* User.m in Sources */,
+				2634C7B91CC3876200DFC654 /* Preferences+CoreDataProperties.m in Sources */,
+				2634C7341CC0DE5000DFC654 /* HomeNavigationController.m in Sources */,
+				2634C7B51CC3876200DFC654 /* Feeling+CoreDataProperties.m in Sources */,
+				2634C7381CC0DFD000DFC654 /* UserHelper.m in Sources */,
+				2634C7B21CC3876200DFC654 /* Measurement.m in Sources */,
+				2634C7B81CC3876200DFC654 /* BloodPressure.m in Sources */,
+				2634C7B11CC3876200DFC654 /* Measurement+CoreDataProperties.m in Sources */,
+				2634C76C1CC22E1800DFC654 /* BloodPressureViewController.m in Sources */,
+				2634C7B41CC3876200DFC654 /* DailyLog.m in Sources */,
+				2634C6FA1CBE3BDB00DFC654 /* AppDelegate.m in Sources */,
+				2634C77B1CC2370500DFC654 /* MeasurementHelper.m in Sources */,
+				2634C7BA1CC3876200DFC654 /* Preferences.m in Sources */,
+				2634C6F71CBE3BDB00DFC654 /* main.m in Sources */,
+				2634C73B1CC0E0DA00DFC654 /* CoreDataHelper.m in Sources */,
+				2634C7B71CC3876200DFC654 /* BloodPressure+CoreDataProperties.m in Sources */,
+				2634C76F1CC230BD00DFC654 /* DailyLogHelper.m in Sources */,
+				2634C7311CC0DD1700DFC654 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2634C70A1CBE3BDB00DFC654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2634C7131CBE3BDB00DFC654 /* bloodPressurePTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2634C7151CBE3BDB00DFC654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2634C71E1CBE3BDB00DFC654 /* bloodPressurePUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2634C7101CBE3BDB00DFC654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2634C6F11CBE3BDB00DFC654 /* bloodPressureP */;
+			targetProxy = 2634C70F1CBE3BDB00DFC654 /* PBXContainerItemProxy */;
+		};
+		2634C71B1CBE3BDB00DFC654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2634C6F11CBE3BDB00DFC654 /* bloodPressureP */;
+			targetProxy = 2634C71A1CBE3BDB00DFC654 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2634C6FE1CBE3BDB00DFC654 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2634C6FF1CBE3BDB00DFC654 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2634C7061CBE3BDB00DFC654 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2634C7071CBE3BDB00DFC654 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2634C7201CBE3BDB00DFC654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2634C7211CBE3BDB00DFC654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2634C7231CBE3BDB00DFC654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E1A4F316DB24F2E9B6AF7EE /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = bloodPressureP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adriana.bloodPressureP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2634C7241CBE3BDB00DFC654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C236FD2E7E7003648B38730 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = bloodPressureP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adriana.bloodPressureP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2634C7261CBE3BDB00DFC654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = bloodPressurePTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adriana.bloodPressurePTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bloodPressureP.app/bloodPressureP";
+			};
+			name = Debug;
+		};
+		2634C7271CBE3BDB00DFC654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = bloodPressurePTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adriana.bloodPressurePTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bloodPressureP.app/bloodPressureP";
+			};
+			name = Release;
+		};
+		2634C7291CBE3BDB00DFC654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = bloodPressurePUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adriana.bloodPressurePUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = bloodPressureP;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2634C72A1CBE3BDB00DFC654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = bloodPressurePUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adriana.bloodPressurePUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = bloodPressureP;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2634C6ED1CBE3BDB00DFC654 /* Build configuration list for PBXProject "bloodPressureP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2634C7201CBE3BDB00DFC654 /* Debug */,
+				2634C7211CBE3BDB00DFC654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2634C7221CBE3BDB00DFC654 /* Build configuration list for PBXNativeTarget "bloodPressureP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2634C7231CBE3BDB00DFC654 /* Debug */,
+				2634C7241CBE3BDB00DFC654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2634C7251CBE3BDB00DFC654 /* Build configuration list for PBXNativeTarget "bloodPressurePTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2634C7261CBE3BDB00DFC654 /* Debug */,
+				2634C7271CBE3BDB00DFC654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2634C7281CBE3BDB00DFC654 /* Build configuration list for PBXNativeTarget "bloodPressurePUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2634C7291CBE3BDB00DFC654 /* Debug */,
+				2634C72A1CBE3BDB00DFC654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2634C7011CBE3BDB00DFC654 /* bloodPressureP.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2634C7021CBE3BDB00DFC654 /* bloodPressureP.xcdatamodel */,
+			);
+			currentVersion = 2634C7021CBE3BDB00DFC654 /* bloodPressureP.xcdatamodel */;
+			path = bloodPressureP.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2634C6EA1CBE3BDB00DFC654 /* Project object */;
+}
