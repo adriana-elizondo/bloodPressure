@@ -30,4 +30,28 @@
     label.layer.masksToBounds = YES;
 }
 
++(void)shakeView:(UIView *)view times:(NSInteger)times{
+    [UIView animateWithDuration:.05
+                     animations:^
+     {
+         CGAffineTransform transform = CGAffineTransformMakeTranslation(7.0, 0);
+         
+         view.transform = transform;
+     }
+                     completion:^(BOOL finished)
+     {
+         [UIView animateWithDuration:.05
+                          animations:^
+          {
+              // returning to identity
+              view.transform = CGAffineTransformIdentity;
+          } completion:^(BOOL finished) {
+              if (times > 1)
+              {
+                  // tilting the other direction
+                  [self shakeView:view times:times-1];
+              }
+          }];
+     }];}
+
 @end

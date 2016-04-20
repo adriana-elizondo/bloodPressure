@@ -10,9 +10,11 @@
 
 @interface UserHelper : NSObject
 
+typedef void (^SignInCompletion)(BOOL success);
+
 +(BOOL)isSignedIn;
-+(BOOL)signInWithPin:(NSString *)pin;
++(void)signInWithPin:(NSString *)pin andCompletion:(SignInCompletion)completion;
 +(void)signUpWithPhone:(NSString *)phone andPasscode:(NSString *)passcode withCompletion:(void(^)(NSError *error))completionBlock;
 +(User *)userWithUsername:(NSString *)username;
-
++(void)savePhone:(NSString *)phone andPassCode:(NSString *)passCode;
 @end

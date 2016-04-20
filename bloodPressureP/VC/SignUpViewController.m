@@ -90,7 +90,7 @@
         if (error) {
             [UIHelper presentAlertControllerWithTitle:@"Error" message:@"Couldn't sign in" onViewController:self];
         }else{
-            [[NSUserDefaults standardUserDefaults] setObject:self.phoneTxt.text forKey:@"username"];
+            [UserHelper savePhone:self.phoneTxt.text andPassCode:self.passCodeTxt.text];
             [self performSegueWithIdentifier:@"homeSegue" sender:self];
         }
     }];

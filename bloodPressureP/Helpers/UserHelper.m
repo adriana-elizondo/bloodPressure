@@ -12,8 +12,8 @@
 
 @implementation UserHelper
 
-+(BOOL)signInWithPin:(NSString *)pin{
-    return [[[NSUserDefaults standardUserDefaults] objectForKey:@"userPin"] isEqualToString:pin];
++(void)signInWithPin:(NSString *)pin andCompletion:(SignInCompletion)completion{
+    completion([[[NSUserDefaults standardUserDefaults] objectForKey:@"userPin"] isEqualToString:pin]);
 }
 
 +(BOOL)isSignedIn{
@@ -32,6 +32,11 @@
 
 +(User *)userWithUsername:(NSString *)username{
     return (User *)[CoreDataHelper entityWithName:@"User" attribute:@"phone" value:username];
+}
+
++(void)savePhone:(NSString *)phone andPassCode:(NSString *)passCode{
+    [[NSUserDefaults standardUserDefaults] setObject:phone forKey:@"username"];
+    [[NSUserDefaults standardUserDefaults] setObject:passCode forKey:@"userPin"];
 }
 
 @end

@@ -13,4 +13,6 @@
 
 +(void)presentAlertControllerWithTitle:(NSString *)title message:(NSString *)message onViewController:(UIViewController *)viewController;
 +(void)setBorderToLabel:(UILabel*)label;
++(void)shakeView:(UIView *)view times:(NSInteger)times;
+
 @end
