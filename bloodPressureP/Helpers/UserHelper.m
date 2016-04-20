@@ -12,8 +12,11 @@
 
 @implementation UserHelper
 
-+(BOOL)isSignedIn
-{
++(BOOL)signInWithPin:(NSString *)pin{
+    return [[[NSUserDefaults standardUserDefaults] objectForKey:@"userPin"] isEqualToString:pin];
+}
+
++(BOOL)isSignedIn{
     return [[NSUserDefaults standardUserDefaults] objectForKey:@"username"];
 }
 

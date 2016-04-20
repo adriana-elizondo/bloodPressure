@@ -38,6 +38,7 @@
 		2634C7B91CC3876200DFC654 /* Preferences+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7AB1CC3876200DFC654 /* Preferences+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		2634C7BA1CC3876200DFC654 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7AE1CC3876200DFC654 /* Preferences.m */; settings = {ASSET_TAGS = (); }; };
 		2634C7BE1CC3912000DFC654 /* NSDate+BPDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7BD1CC3912000DFC654 /* NSDate+BPDate.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7C11CC676D400DFC654 /* PINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7C01CC676D400DFC654 /* PINViewController.m */; settings = {ASSET_TAGS = (); }; };
 		794E6DCA2B170DC5D958DAFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 140FE9C522D28869F070EE0C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,8 @@
 		2634C7AE1CC3876200DFC654 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Preferences.m; path = CoreDataModels/Preferences.m; sourceTree = "<group>"; };
 		2634C7BC1CC3912000DFC654 /* NSDate+BPDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+BPDate.h"; path = "Categories/NSDate+BPDate.h"; sourceTree = "<group>"; };
 		2634C7BD1CC3912000DFC654 /* NSDate+BPDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+BPDate.m"; path = "Categories/NSDate+BPDate.m"; sourceTree = "<group>"; };
+		2634C7BF1CC676D400DFC654 /* PINViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PINViewController.h; path = VC/PINViewController.h; sourceTree = "<group>"; };
+		2634C7C01CC676D400DFC654 /* PINViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PINViewController.m; path = VC/PINViewController.m; sourceTree = "<group>"; };
 		4E1A4F316DB24F2E9B6AF7EE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5C236FD2E7E7003648B38730 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -238,6 +241,8 @@
 				2634C7331CC0DE5000DFC654 /* HomeNavigationController.m */,
 				2634C76A1CC22E1800DFC654 /* BloodPressureViewController.h */,
 				2634C76B1CC22E1800DFC654 /* BloodPressureViewController.m */,
+				2634C7BF1CC676D400DFC654 /* PINViewController.h */,
+				2634C7C01CC676D400DFC654 /* PINViewController.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -493,6 +498,7 @@
 				2634C76C1CC22E1800DFC654 /* BloodPressureViewController.m in Sources */,
 				2634C7B41CC3876200DFC654 /* DailyLog.m in Sources */,
 				2634C6FA1CBE3BDB00DFC654 /* AppDelegate.m in Sources */,
+				2634C7C11CC676D400DFC654 /* PINViewController.m in Sources */,
 				2634C77B1CC2370500DFC654 /* MeasurementHelper.m in Sources */,
 				2634C7BA1CC3876200DFC654 /* Preferences.m in Sources */,
 				2634C6F71CBE3BDB00DFC654 /* main.m in Sources */,

@@ -11,6 +11,7 @@
 @interface UserHelper : NSObject
 
 +(BOOL)isSignedIn;
++(BOOL)signInWithPin:(NSString *)pin;
 +(void)signUpWithPhone:(NSString *)phone andPasscode:(NSString *)passcode withCompletion:(void(^)(NSError *error))completionBlock;
 +(User *)userWithUsername:(NSString *)username;
 
