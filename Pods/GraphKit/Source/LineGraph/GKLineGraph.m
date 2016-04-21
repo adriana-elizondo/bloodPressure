@@ -36,7 +36,7 @@ static CGFloat kDefaultLineWidth = 3.0;
 static CGFloat kDefaultMargin = 10.0;
 static CGFloat kDefaultMarginBottom = 20.0;
 
-static CGFloat kAxisMargin = 50.0;
+static CGFloat kAxisMargin = 15.0;
 
 @interface GKLineGraph ()
 
@@ -151,27 +151,27 @@ static CGFloat kAxisMargin = 50.0;
 
 - (void)_constructValueLabels {
     
-    NSInteger count = self.valueLabelCount;
-    id items = [NSMutableArray arrayWithCapacity:count];
-    
-    for (NSInteger idx = 0; idx < count; idx++) {
-        
-        CGRect frame = CGRectMake(0, 0, kDefaultLabelWidth, kDefaultLabelHeight);
-        UILabel *item = [[UILabel alloc] initWithFrame:frame];
-        item.textAlignment = NSTextAlignmentRight;
-        item.font = [UIFont boldSystemFontOfSize:12];
-        item.textColor = [UIColor lightGrayColor];
-    
-        CGFloat value = [self _minValue] + (idx * [self _stepValueLabelY]);
-        item.centerY = [self _positionYForLineValue:value];
-        
-        item.text = [@(ceil(value)) stringValue];
-//        item.text = [@(value) stringValue];
-        
-        [items addObject:item];
-        [self addSubview:item];
-    }
-    self.valueLabels = items;
+//    NSInteger count = self.valueLabelCount;
+//    id items = [NSMutableArray arrayWithCapacity:count];
+//    
+//    for (NSInteger idx = 0; idx < count; idx++) {
+//        
+//        CGRect frame = CGRectMake(0, 0, kDefaultLabelWidth, kDefaultLabelHeight);
+//        UILabel *item = [[UILabel alloc] initWithFrame:frame];
+//        item.textAlignment = NSTextAlignmentRight;
+//        item.font = [UIFont boldSystemFontOfSize:12];
+//        item.textColor = [UIColor lightGrayColor];
+//    
+//        CGFloat value = [self _minValue] + (idx * [self _stepValueLabelY]);
+//        item.centerY = [self _positionYForLineValue:value];
+//        
+//        item.text = [@(ceil(value)) stringValue];
+////        item.text = [@(value) stringValue];
+//        
+//        [items addObject:item];
+//        [self addSubview:item];
+//    }
+//    self.valueLabels = items;
 }
 
 - (CGFloat)_stepValueLabelY {
@@ -207,7 +207,7 @@ static CGFloat kAxisMargin = 50.0;
 }
 
 - (CGFloat)_plotWidth {
-    return (self.width - (2 * self.margin) - kAxisMargin);
+    return (self.width - (self.margin) - kAxisMargin);
 }
 
 - (CGFloat)_plotHeight {
@@ -239,6 +239,9 @@ static CGFloat kAxisMargin = 50.0;
         CGFloat x = [self _pointXForIndex:idx];
         CGFloat y = [self _positionYForLineValue:[item floatValue]];
         CGPoint point = CGPointMake(x, y);
+        UILabel *testingLabel = [[UILabel alloc] initWithFrame:CGRectMake(point.x-10, point.y-20, 40, 10)];
+        testingLabel.text = [NSString stringWithFormat:@"%@", item];
+        [self addSubview:testingLabel];
         
         if (idx != 0) [path addLineToPoint:point];
         [path moveToPoint:point];
