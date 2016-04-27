@@ -41,6 +41,7 @@
 		2634C7C11CC676D400DFC654 /* PINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7C01CC676D400DFC654 /* PINViewController.m */; settings = {ASSET_TAGS = (); }; };
 		2634C7C51CC7A37200DFC654 /* TimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7C41CC7A37200DFC654 /* TimerView.m */; settings = {ASSET_TAGS = (); }; };
 		2634C7C81CC7AEBF00DFC654 /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7C71CC7AEBF00DFC654 /* StatisticsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2634C7CB1CCCAA5200DFC654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7CA1CCCAA5200DFC654 /* ProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
 		794E6DCA2B170DC5D958DAFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 140FE9C522D28869F070EE0C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +131,8 @@
 		2634C7C41CC7A37200DFC654 /* TimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimerView.m; path = UIViews/TimerView.m; sourceTree = "<group>"; };
 		2634C7C61CC7AEBF00DFC654 /* StatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatisticsViewController.h; path = VC/StatisticsViewController.h; sourceTree = "<group>"; };
 		2634C7C71CC7AEBF00DFC654 /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatisticsViewController.m; path = VC/StatisticsViewController.m; sourceTree = "<group>"; };
+		2634C7C91CCCAA5200DFC654 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = VC/ProfileViewController.h; sourceTree = "<group>"; };
+		2634C7CA1CCCAA5200DFC654 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = VC/ProfileViewController.m; sourceTree = "<group>"; };
 		4E1A4F316DB24F2E9B6AF7EE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5C236FD2E7E7003648B38730 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -252,6 +255,8 @@
 				2634C7C01CC676D400DFC654 /* PINViewController.m */,
 				2634C7C61CC7AEBF00DFC654 /* StatisticsViewController.h */,
 				2634C7C71CC7AEBF00DFC654 /* StatisticsViewController.m */,
+				2634C7C91CCCAA5200DFC654 /* ProfileViewController.h */,
+				2634C7CA1CCCAA5200DFC654 /* ProfileViewController.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -501,6 +506,7 @@
 				2634C7B31CC3876200DFC654 /* DailyLog+CoreDataProperties.m in Sources */,
 				2634C7AF1CC3876200DFC654 /* User+CoreDataProperties.m in Sources */,
 				2634C77E1CC382D000DFC654 /* BloodPressureHelper.m in Sources */,
+				2634C7CB1CCCAA5200DFC654 /* ProfileViewController.m in Sources */,
 				2634C7031CBE3BDB00DFC654 /* bloodPressureP.xcdatamodeld in Sources */,
 				2634C7B61CC3876200DFC654 /* Feeling.m in Sources */,
 				2634C7841CC3858B00DFC654 /* UIHelper.m in Sources */,

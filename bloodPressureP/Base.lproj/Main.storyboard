@@ -199,7 +199,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="TENS.IO" id="fbH-hu-tt4">
-                        <barButtonItem key="leftBarButtonItem" title="Me!" id="JAa-rz-PR4"/>
+                        <barButtonItem key="leftBarButtonItem" title="Me!" id="JAa-rz-PR4">
+                            <connections>
+                                <segue destination="PLN-xm-2Sb" kind="show" id="V6h-Xa-M8K"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Stats!" id="eay-3t-b4T">
                             <connections>
                                 <segue destination="pUs-UB-ysc" kind="show" id="p6S-U3-cjQ"/>
@@ -650,6 +654,54 @@
             </objects>
             <point key="canvasLocation" x="947.5" y="-1361.5"/>
         </scene>
+        <!--Tu perfil-->
+        <scene sceneID="FlC-d7-pVM">
+            <objects>
+                <viewController id="PLN-xm-2Sb" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="anC-Mn-gLq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qJh-1Z-urs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vLz-wn-bh2">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chaparrito" translatesAutoresizingMaskIntoConstraints="NO" id="4c3-s3-NB8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="206"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Go-eR-WRB">
+                                <rect key="frame" x="0.0" y="207" width="375" height="396"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32549019610000002" green="0.36078431370000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4c3-s3-NB8" firstAttribute="leading" secondItem="vLz-wn-bh2" secondAttribute="leadingMargin" constant="-20" id="IR2-c0-CeK"/>
+                            <constraint firstItem="9Go-eR-WRB" firstAttribute="leading" secondItem="vLz-wn-bh2" secondAttribute="leadingMargin" constant="-20" id="NTW-Bf-CP4"/>
+                            <constraint firstItem="qJh-1Z-urs" firstAttribute="top" secondItem="4c3-s3-NB8" secondAttribute="bottom" constant="397" id="O8W-4z-0H3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Go-eR-WRB" secondAttribute="trailing" constant="-20" id="QOj-rH-El4"/>
+                            <constraint firstItem="4c3-s3-NB8" firstAttribute="centerX" secondItem="vLz-wn-bh2" secondAttribute="centerX" id="bMm-MY-bX7"/>
+                            <constraint firstItem="9Go-eR-WRB" firstAttribute="top" secondItem="4c3-s3-NB8" secondAttribute="bottom" constant="1" id="mvf-mZ-kcB"/>
+                            <constraint firstItem="4c3-s3-NB8" firstAttribute="top" secondItem="anC-Mn-gLq" secondAttribute="bottom" id="nUT-RA-pts"/>
+                            <constraint firstItem="qJh-1Z-urs" firstAttribute="top" secondItem="9Go-eR-WRB" secondAttribute="bottom" id="oAY-Ll-mIu"/>
+                            <constraint firstItem="4c3-s3-NB8" firstAttribute="width" secondItem="vLz-wn-bh2" secondAttribute="width" id="x07-Zq-AwJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IR2-c0-CeK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tu perfil" id="Dwj-vo-2Qt"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="4c3-s3-NB8" id="M5u-P1-QCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6P9-5U-qmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346.5" y="-1184.5"/>
+        </scene>
         <!--Home Navigation Controller-->
         <scene sceneID="Nfk-bT-KJt">
             <objects>
@@ -677,6 +729,7 @@
     </scenes>
     <resources>
         <image name="arrows" width="64" height="64"/>
+        <image name="chaparrito" width="682" height="1024"/>
         <image name="done" width="64" height="64"/>
         <image name="eight" width="64" height="64"/>
         <image name="five" width="64" height="64"/>
