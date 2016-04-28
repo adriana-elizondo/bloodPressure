@@ -14,5 +14,8 @@
 +(void)presentAlertControllerWithTitle:(NSString *)title message:(NSString *)message onViewController:(UIViewController *)viewController;
 +(void)setBorderToLabel:(UILabel*)label;
 +(void)shakeView:(UIView *)view times:(NSInteger)times;
-
++(UIImage *)takeScreenshotOfView:(UIView *)view;
++(UIImage *)circularOverlayForView:(UIView *)view;
++(UIImage *)applyBlurWithRadius:(CGFloat)blurRadius toImage:(UIImage *)image tintColor:(UIColor *)tintColor saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage;
++(UIImage *)blurredImage:(UIImage *)image;
 @end

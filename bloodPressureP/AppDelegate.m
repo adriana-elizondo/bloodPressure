@@ -22,11 +22,11 @@
     // Override point for customization after application launch.
     [MagicalRecord setupCoreDataStack];
     
-    if (![UserHelper isSignedIn]) {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        SignUpViewController *signUpVC = [storyboard instantiateViewControllerWithIdentifier:@"signUpNib"];
-        self.window.rootViewController = signUpVC;
-    }
+//    if (![UserHelper isSignedIn]) {
+//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//        SignUpViewController *signUpVC = [storyboard instantiateViewControllerWithIdentifier:@"signUpNib"];
+//        self.window.rootViewController = signUpVC;
+//    }
     return YES;
 }
 
