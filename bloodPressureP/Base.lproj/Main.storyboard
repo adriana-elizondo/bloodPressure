@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i1J-eD-1Gi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mv2-qc-3U7">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Añadir a tensión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ms9-9m-UIW">
-                                <rect key="frame" x="125" y="32" width="123.5" height="20.5"/>
+                                <rect key="frame" x="125" y="32" width="124" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -294,6 +294,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="confirmPasscodeText" destination="hNs-30-OT7" id="0XX-Gr-oqB"/>
                         <outlet property="passCodeTxt" destination="fVC-q6-kLf" id="fgG-nk-L4y"/>
                         <outlet property="phoneTxt" destination="H37-2N-4vv" id="tyX-YL-dx3"/>
                         <outlet property="signUpButton" destination="XSE-N2-Kg6" id="JbP-Rn-xCc"/>
@@ -725,7 +726,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chaparrito" translatesAutoresizingMaskIntoConstraints="NO" id="4c3-s3-NB8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chaparrito" translatesAutoresizingMaskIntoConstraints="NO" id="4c3-s3-NB8" customClass="DraggableImage">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="206"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Go-eR-WRB">
@@ -733,14 +734,23 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajq-uP-cON">
+                                <rect key="frame" x="322" y="0.0" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="editProfilePicture:" destination="PLN-xm-2Sb" eventType="touchUpInside" id="Qwp-0N-aBP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.32549019610000002" green="0.36078431370000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Ajq-uP-cON" firstAttribute="top" secondItem="4c3-s3-NB8" secondAttribute="top" id="E8w-eg-39Q"/>
                             <constraint firstItem="4c3-s3-NB8" firstAttribute="leading" secondItem="vLz-wn-bh2" secondAttribute="leadingMargin" constant="-20" id="IR2-c0-CeK"/>
                             <constraint firstItem="9Go-eR-WRB" firstAttribute="leading" secondItem="vLz-wn-bh2" secondAttribute="leadingMargin" constant="-20" id="NTW-Bf-CP4"/>
                             <constraint firstItem="qJh-1Z-urs" firstAttribute="top" secondItem="4c3-s3-NB8" secondAttribute="bottom" constant="397" id="O8W-4z-0H3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Go-eR-WRB" secondAttribute="trailing" constant="-20" id="QOj-rH-El4"/>
                             <constraint firstItem="4c3-s3-NB8" firstAttribute="centerX" secondItem="vLz-wn-bh2" secondAttribute="centerX" id="bMm-MY-bX7"/>
+                            <constraint firstItem="Ajq-uP-cON" firstAttribute="leading" secondItem="4c3-s3-NB8" secondAttribute="trailing" constant="-53" id="g1j-4I-bSX"/>
                             <constraint firstItem="9Go-eR-WRB" firstAttribute="top" secondItem="4c3-s3-NB8" secondAttribute="bottom" constant="1" id="mvf-mZ-kcB"/>
                             <constraint firstItem="4c3-s3-NB8" firstAttribute="top" secondItem="anC-Mn-gLq" secondAttribute="bottom" id="nUT-RA-pts"/>
                             <constraint firstItem="qJh-1Z-urs" firstAttribute="top" secondItem="9Go-eR-WRB" secondAttribute="bottom" id="oAY-Ll-mIu"/>
@@ -752,8 +762,11 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Tu perfil" id="Dwj-vo-2Qt"/>
+                    <navigationItem key="navigationItem" title="Tu perfil" id="Dwj-vo-2Qt">
+                        <barButtonItem key="rightBarButtonItem" id="pbC-Ax-xH8"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="editPictureButton" destination="Ajq-uP-cON" id="Lna-dJ-LA4"/>
                         <outlet property="profileImageView" destination="4c3-s3-NB8" id="M5u-P1-QCp"/>
                     </connections>
                 </viewController>
@@ -809,7 +822,7 @@
         <image name="zero" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="96h-Lq-MXc"/>
+        <segue reference="Jo0-SA-yb6"/>
         <segue reference="p6S-U3-cjQ"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -5,15 +5,21 @@
 //  Created by Adriana Elizondo on 4/24/16.
 //  Copyright © 2016 Adriana Elizondo. All rights reserved.
 //
-
+#import "AlertAction.h"
+#import "DraggableImage.h"
 #import "ProfileViewController.h"
+#import "UIHelper.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface ProfileViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+@interface ProfileViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property (weak, nonatomic) IBOutlet DraggableImage *profileImageView;
 @property (strong) CAShapeLayer *blurFilterMask;
 @property (assign) CGPoint blurFilterOrigin;
 @property (assign) CGFloat blurFilterDiameter;
+@property (weak, nonatomic) IBOutlet UIButton *editPictureButton;
+@property UIImage *finalImage;
+@property UIImagePickerController *pickerController;
+@property NSArray <AlertAction *>* actionSheetActions;
 
 @end
 
@@ -22,7 +28,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self beginBlurMasking];
+    [self.profileImageView setUserInteractionEnabled:YES];
+    [self createUIElements];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -31,59 +39,37 @@
     // Dispose of any resources that can be recreated.
 }
 
-// begin the blur masking operation.
-- (void)beginBlurMasking
-{
-    self.blurFilterOrigin = self.profileImageView.center;
-    self.blurFilterDiameter = MIN(CGRectGetWidth(self.profileImageView.bounds), CGRectGetHeight(self.profileImageView.bounds));
+-(void)createUIElements{
+    self.pickerController = [[UIImagePickerController alloc] init];
+    self.pickerController.delegate = self;
     
-    CAShapeLayer *blurFilterMask = [CAShapeLayer layer];
+    AlertAction *pictureFromCamera = [[AlertAction alloc] init];
+    pictureFromCamera.actionTitle = @"Camera roll";
+    pictureFromCamera.completion = ^{
+        [self.pickerController setSourceType:UIImagePickerControllerSourceTypeCamera];
+        [self presentViewController:self.pickerController animated:YES completion:nil];
+    };
     
-    // Disable implicit animations for the blur filter mask's path property.
-    blurFilterMask.actions = [[NSDictionary alloc] initWithObjectsAndKeys:[NSNull null], @"path", nil];
-    blurFilterMask.fillColor = [UIColor blackColor].CGColor;
-    blurFilterMask.fillRule = kCAFillRuleEvenOdd;
-    blurFilterMask.frame = self.profileImageView.bounds;
-    blurFilterMask.opacity = 0.5f;
-    self.blurFilterMask = blurFilterMask;
-    [self refreshBlurMask];
-    [self.profileImageView.layer addSublayer:blurFilterMask];
+    AlertAction *pictureFromGallery = [[AlertAction alloc] init];
+    pictureFromGallery.actionTitle = @"Gallery";
+    pictureFromGallery.completion = ^{
+        [self.pickerController setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+        [self presentViewController:self.pickerController animated:YES completion:nil];
+    };
     
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-    [self.profileImageView addGestureRecognizer:tapGesture];
+    self.actionSheetActions = @[pictureFromCamera, pictureFromGallery];
     
-    UIPinchGestureRecognizer *pinchGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinch:)];
-    [self.profileImageView addGestureRecognizer:pinchGesture];
 }
 
-// Move the origin of the blur mask to the location of the tap.
-- (void)handleTap:(UITapGestureRecognizer *)sender
-{
-    self.blurFilterOrigin = [sender locationInView:self.profileImageView];
-    [self refreshBlurMask];
+- (IBAction)editProfilePicture:(id)sender {
+    [UIHelper presentActionsheetControllerWithTitle:@"Select a picture" message:@"" onViewController:self withActions:self.actionSheetActions];
 }
 
-// Expand and contract the clear region of the blur mask.
-- (void)handlePinch:(UIPinchGestureRecognizer *)sender
-{
-    // Use some combination of sender.scale and sender.velocity to determine the rate at which you want the circle to expand/contract.
-    self.blurFilterDiameter += sender.velocity;
-    [self refreshBlurMask];
-}
 
-// Update the blur mask within the UI.
-- (void)refreshBlurMask
-{
-    CGFloat blurFilterRadius = self.blurFilterDiameter * 0.5f;
-    
-    CGMutablePathRef blurRegionPath = CGPathCreateMutable();
-    CGPathAddRect(blurRegionPath, NULL, self.profileImageView.bounds);
-    CGPathAddEllipseInRect(blurRegionPath, NULL, CGRectMake(self.blurFilterOrigin.x - blurFilterRadius, self.blurFilterOrigin.y - blurFilterRadius, self.blurFilterDiameter, self.blurFilterDiameter));
-    
-    self.blurFilterMask.path = blurRegionPath;
-    
-    CGPathRelease(blurRegionPath);
+#pragma mark - UIimage picker delegate
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+    UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
+    self.profileImageView.image = image;
 }
-
 
 @end

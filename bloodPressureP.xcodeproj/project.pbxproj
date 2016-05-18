@@ -15,33 +15,6 @@
 		2634C7081CBE3BDB00DFC654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2634C7061CBE3BDB00DFC654 /* LaunchScreen.storyboard */; };
 		2634C7131CBE3BDB00DFC654 /* bloodPressurePTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7121CBE3BDB00DFC654 /* bloodPressurePTests.m */; };
 		2634C71E1CBE3BDB00DFC654 /* bloodPressurePUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C71D1CBE3BDB00DFC654 /* bloodPressurePUITests.m */; };
-		2634C72E1CC0DC3400DFC654 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C72D1CC0DC3400DFC654 /* SignUpViewController.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7311CC0DD1700DFC654 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7301CC0DD1700DFC654 /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7341CC0DE5000DFC654 /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7331CC0DE5000DFC654 /* HomeNavigationController.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7381CC0DFD000DFC654 /* UserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7371CC0DFD000DFC654 /* UserHelper.m */; settings = {ASSET_TAGS = (); }; };
-		2634C73B1CC0E0DA00DFC654 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C73A1CC0E0DA00DFC654 /* CoreDataHelper.m */; settings = {ASSET_TAGS = (); }; };
-		2634C76C1CC22E1800DFC654 /* BloodPressureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C76B1CC22E1800DFC654 /* BloodPressureViewController.m */; settings = {ASSET_TAGS = (); }; };
-		2634C76F1CC230BD00DFC654 /* DailyLogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C76E1CC230BD00DFC654 /* DailyLogHelper.m */; settings = {ASSET_TAGS = (); }; };
-		2634C77B1CC2370500DFC654 /* MeasurementHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C77A1CC2370500DFC654 /* MeasurementHelper.m */; settings = {ASSET_TAGS = (); }; };
-		2634C77E1CC382D000DFC654 /* BloodPressureHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C77D1CC382D000DFC654 /* BloodPressureHelper.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7841CC3858B00DFC654 /* UIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7831CC3858B00DFC654 /* UIHelper.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7AF1CC3876200DFC654 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7981CC3876200DFC654 /* User+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7B01CC3876200DFC654 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C79A1CC3876200DFC654 /* User.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7B11CC3876200DFC654 /* Measurement+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C79C1CC3876200DFC654 /* Measurement+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7B21CC3876200DFC654 /* Measurement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C79E1CC3876200DFC654 /* Measurement.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7B31CC3876200DFC654 /* DailyLog+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7A01CC3876200DFC654 /* DailyLog+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7B41CC3876200DFC654 /* DailyLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7A21CC3876200DFC654 /* DailyLog.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7B51CC3876200DFC654 /* Feeling+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7A41CC3876200DFC654 /* Feeling+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7B61CC3876200DFC654 /* Feeling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7A61CC3876200DFC654 /* Feeling.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7B71CC3876200DFC654 /* BloodPressure+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7A81CC3876200DFC654 /* BloodPressure+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7B81CC3876200DFC654 /* BloodPressure.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7A91CC3876200DFC654 /* BloodPressure.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7B91CC3876200DFC654 /* Preferences+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7AB1CC3876200DFC654 /* Preferences+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7BA1CC3876200DFC654 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7AE1CC3876200DFC654 /* Preferences.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7BE1CC3912000DFC654 /* NSDate+BPDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7BD1CC3912000DFC654 /* NSDate+BPDate.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7C11CC676D400DFC654 /* PINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7C01CC676D400DFC654 /* PINViewController.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7C51CC7A37200DFC654 /* TimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7C41CC7A37200DFC654 /* TimerView.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7C81CC7AEBF00DFC654 /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7C71CC7AEBF00DFC654 /* StatisticsViewController.m */; settings = {ASSET_TAGS = (); }; };
-		2634C7CB1CCCAA5200DFC654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7CA1CCCAA5200DFC654 /* ProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
 		2634C72E1CC0DC3400DFC654 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C72D1CC0DC3400DFC654 /* SignUpViewController.m */; };
 		2634C7311CC0DD1700DFC654 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7301CC0DD1700DFC654 /* HomeViewController.m */; };
 		2634C7341CC0DE5000DFC654 /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7331CC0DE5000DFC654 /* HomeNavigationController.m */; };
@@ -66,6 +39,10 @@
 		2634C7BA1CC3876200DFC654 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7AE1CC3876200DFC654 /* Preferences.m */; };
 		2634C7BE1CC3912000DFC654 /* NSDate+BPDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7BD1CC3912000DFC654 /* NSDate+BPDate.m */; };
 		2634C7C11CC676D400DFC654 /* PINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7C01CC676D400DFC654 /* PINViewController.m */; };
+		2634C7C51CC7A37200DFC654 /* TimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7C41CC7A37200DFC654 /* TimerView.m */; };
+		2634C7C81CC7AEBF00DFC654 /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7C71CC7AEBF00DFC654 /* StatisticsViewController.m */; };
+		2634C7CB1CCCAA5200DFC654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2634C7CA1CCCAA5200DFC654 /* ProfileViewController.m */; };
+		3A27DD091CD3512300567F97 /* AlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A27DD081CD3512300567F97 /* AlertAction.m */; };
 		3A6FB5471CCDDDFF00AEB4C6 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6FB5461CCDDDFF00AEB4C6 /* TestViewController.m */; };
 		3A9E8EB11CCF76AE00709396 /* DraggableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9E8EB01CCF76AE00709396 /* DraggableImage.m */; };
 		794E6DCA2B170DC5D958DAFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 140FE9C522D28869F070EE0C /* libPods.a */; };
@@ -159,6 +136,8 @@
 		2634C7C71CC7AEBF00DFC654 /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatisticsViewController.m; path = VC/StatisticsViewController.m; sourceTree = "<group>"; };
 		2634C7C91CCCAA5200DFC654 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = VC/ProfileViewController.h; sourceTree = "<group>"; };
 		2634C7CA1CCCAA5200DFC654 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = VC/ProfileViewController.m; sourceTree = "<group>"; };
+		3A27DD071CD3512300567F97 /* AlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlertAction.h; path = Helpers/AlertAction.h; sourceTree = "<group>"; };
+		3A27DD081CD3512300567F97 /* AlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlertAction.m; path = Helpers/AlertAction.m; sourceTree = "<group>"; };
 		3A6FB5451CCDDDFF00AEB4C6 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = VC/TestViewController.h; sourceTree = "<group>"; };
 		3A6FB5461CCDDDFF00AEB4C6 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = VC/TestViewController.m; sourceTree = "<group>"; };
 		3A9E8EAF1CCF76AE00709396 /* DraggableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableImage.h; sourceTree = "<group>"; };
@@ -308,6 +287,8 @@
 				2634C77D1CC382D000DFC654 /* BloodPressureHelper.m */,
 				2634C7821CC3858B00DFC654 /* UIHelper.h */,
 				2634C7831CC3858B00DFC654 /* UIHelper.m */,
+				3A27DD071CD3512300567F97 /* AlertAction.h */,
+				3A27DD081CD3512300567F97 /* AlertAction.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -440,6 +421,7 @@
 				TargetAttributes = {
 					2634C6F11CBE3BDB00DFC654 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = GEEM4BQ58H;
 					};
 					2634C70D1CBE3BDB00DFC654 = {
 						CreatedOnToolsVersion = 7.0;
@@ -550,6 +532,7 @@
 				2634C7B01CC3876200DFC654 /* User.m in Sources */,
 				2634C7B91CC3876200DFC654 /* Preferences+CoreDataProperties.m in Sources */,
 				2634C7341CC0DE5000DFC654 /* HomeNavigationController.m in Sources */,
+				3A27DD091CD3512300567F97 /* AlertAction.m in Sources */,
 				2634C7B51CC3876200DFC654 /* Feeling+CoreDataProperties.m in Sources */,
 				2634C7381CC0DFD000DFC654 /* UserHelper.m in Sources */,
 				2634C7B21CC3876200DFC654 /* Measurement.m in Sources */,
@@ -707,7 +690,9 @@
 			baseConfigurationReference = 4E1A4F316DB24F2E9B6AF7EE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = bloodPressureP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adriana.bloodPressureP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -719,7 +704,9 @@
 			baseConfigurationReference = 5C236FD2E7E7003648B38730 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = bloodPressureP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adriana.bloodPressureP;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -22,6 +22,17 @@
     [viewController presentViewController:alertController animated:YES completion:nil];
 }
 
++(void)presentActionsheetControllerWithTitle:(NSString *)title message:(NSString *)message onViewController:(UIViewController *)viewController withActions:(NSArray<AlertAction *>*)actions{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
+    for (AlertAction *actionReceived in actions) {
+        [alertController addAction:[UIAlertAction actionWithTitle:actionReceived.actionTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            actionReceived.completion();
+        }]];
+    }
+    
+    [viewController presentViewController:alertController animated:YES completion:nil];
+}
+
 +(void)setBorderToLabel:(UILabel*)label{
     CALayer *border = [CALayer layer];
     CGFloat borderWidth = 1;

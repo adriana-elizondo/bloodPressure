@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *phoneTxt;
 @property (weak, nonatomic) IBOutlet UITextField *passCodeTxt;
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+@property (weak, nonatomic) IBOutlet UITextField *confirmPasscodeText;
 
 @end
 
@@ -44,6 +45,7 @@
 -(void)dismissKeyboard{
     [self.phoneTxt resignFirstResponder];
     [self.passCodeTxt resignFirstResponder];
+    [self.confirmPasscodeText resignFirstResponder];
 }
 
 -(void)handleKeyboardNotification:(NSNotification *)notification{
